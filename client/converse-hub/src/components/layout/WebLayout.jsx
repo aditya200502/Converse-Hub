@@ -39,4 +39,17 @@ const WebLayout = () => WrappedComponent => {
                         lg={3}
                         sx={{
                             display: { xs: "none", md: "block" },
-                            padding: "2rem", 
+                            padding: "2rem",
+                            bgcolor:"rgba(0,0,0,0.85)"
+                        }}
+                        height={"100%"}
+                    >
+                        Second
+                    </Grid>
+                </Grid>
+            </>
+        )
+    }
+}
+
+export default WebLayout;
