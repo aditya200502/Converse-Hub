@@ -2,10 +2,21 @@ import React from 'react'
 import Header from './Header'
 import Title from '../shared/Title'
 import { Grid } from '@mui/material'
+import Chats from '../specific/Chats'
+import { initialChats } from '../../constants/sampleData'
+import { useParams } from 'react-router-dom'
 
 const WebLayout = () => WrappedComponent => {
 
     return (props) => {
+
+        const params = useParams();
+        const chatId = params.chatId;
+
+        const handleDeleteChat = (e,_id,groupChat) => {
+            e.preventDefault();
+            console.log("delete chat",_id,groupChat);
+        }
 
 
         return (
@@ -23,7 +34,11 @@ const WebLayout = () => WrappedComponent => {
                         }}
                         height={"100%"}
                     >
-                        First
+                        <Chats
+                            chats={initialChats}
+                            chatId={chatId}
+                            handleDeleteChat={handleDeleteChat}
+                        />
                     </Grid>
                     <Grid
                         item
@@ -40,7 +55,7 @@ const WebLayout = () => WrappedComponent => {
                         sx={{
                             display: { xs: "none", md: "block" },
                             padding: "2rem",
-                            bgcolor:"rgba(0,0,0,0.85)"
+                            bgcolor: "rgba(0,0,0,0.85)"
                         }}
                         height={"100%"}
                     >
