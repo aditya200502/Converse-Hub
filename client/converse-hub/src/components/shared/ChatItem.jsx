@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import { Link } from '../styles/StyledComponent'
 import { Box, Stack, Typography } from '@mui/material'
+import AvatarCard from './AvatarCard'
 
 const ChatItem = ({
 
@@ -33,7 +34,7 @@ const ChatItem = ({
                 position: "relative"
             }}
             >
-                {/* Avatar Card */}
+                <AvatarCard avatar={avatar}/>
 
                 <Stack>
                     <Typography>
