@@ -8,12 +8,23 @@ export const initialChats = [
     },
 
     {
-        avatar: ["https://i.pravatar.cc/300",
-        ],
+        avatar: ["https://i.pravatar.cc/300"],
         name: "Narotam",
         _id: "2",
         groupChat: true,
         members: ["1", "2"]
     },
 
+]
+
+export const sampleUsers = [{
+    avatar: ["https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"],
+    name: "Sample",
+    _id: "1",
+},
+{
+    avatar: ["https://i.pravatar.cc/300"],
+    name: "Narotam",
+    _id: "2",
+}
 ]
