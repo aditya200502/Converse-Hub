@@ -3,7 +3,7 @@ import WebLayout from '../components/layout/WebLayout'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>Chat</div>
   )
 }
 

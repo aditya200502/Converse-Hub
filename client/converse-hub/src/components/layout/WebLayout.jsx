@@ -5,6 +5,7 @@ import { Grid } from '@mui/material'
 import Chats from '../specific/Chats'
 import { initialChats } from '../../constants/sampleData'
 import { useParams } from 'react-router-dom'
+import Profile from '../specific/Profile'
 
 const WebLayout = () => WrappedComponent => {
 
@@ -59,7 +60,7 @@ const WebLayout = () => WrappedComponent => {
                         }}
                         height={"100%"}
                     >
-                        Second
+                        <Profile/>
                     </Grid>
                 </Grid>
             </>
