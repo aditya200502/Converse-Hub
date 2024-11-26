@@ -1,1 +1,1 @@
-export const server = `https://converse-hub.onrender.com`;
+export const server = VITE_SERVER;
